@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Tienen un orden de prioridad
+    El ultimo que esta en el documento es el que se muestra, es decir, en este caso se priorizaria el estilo de la etiqueta <style>, por estar abajo.
+        Aunque el de mayor prioridad es el que va en la linea del elemento, siempre se va a sobreponer sobre los demas estilos-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de estilos</title>
+    <link rel="stylesheet" href="external.css"> <!--Ingresar CSS externo-->
+    <style>
+        /*CSS Interno*/
+        p{
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color:white;">Ejemplo header</h1> <!--CSS Inline, en la misma linea del elemento-->
+    <p>Parrafo ejemplo</p>
+    
+</body>
+</html>

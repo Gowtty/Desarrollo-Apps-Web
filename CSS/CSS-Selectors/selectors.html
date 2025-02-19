@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+
+        /*Selector universal - Se utiliza para dar el estilo ingresado a todos los elementos*/
+        *{
+            font-family: Arial;
+        }
+
+        body{
+            background-color: black;
+        }
+        
+        p{
+            text-align: center;
+            color: white;
+        }
+
+        /*ID Selectors*/
+        #primero{
+            color: aqua;
+        }
+        /*Class selectors*/
+        .segundo{
+            color: green;
+        }
+
+        /*Elemento especifico con clase o id*/
+
+        p.segundo{
+            text-align: right;
+        }
+
+        /*Elementos con doble clase*/
+        .doble {
+            font-size: 20px;
+        }
+
+        .clase{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="segundo">Header ejemplo</h1>
+    <p id="primero">Párrafo 1</p>
+    <p class="segundo">Párrafo 2</p>
+    <p class="doble clase">Párrafo 3</p>
+</body>
+</html>
