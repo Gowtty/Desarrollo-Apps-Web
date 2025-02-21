@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction JS</title>
+</head>
+<body>
+    <h1 id="externo">Texto</h1>
+    <h2 id="titulo">Ejemplo de uso JavaScript</h2>
+    <p>Con JavaScript se puede cambiar valores y elementos en un sitio web</p>
+    <p id="vacio"></p>
+    
+    
+</body>
+</html>
+
+<script>
+    document.getElementById("titulo").style.fontSize = "30px"; // Con JS se puede cambiar el CSS
+    document.getElementById("vacio").innerHTML = "Texto agregado con JS"; // y elementos HTML
+    document.getElementById("titulo").style.textAlign = "center";
+</script>
+<script src="externo.js"></script>
