@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipervinculos</title>
+
+    <style>
+        a{
+            /*Quitar subrayado a links y mejorar su aspecto*/
+            text-decoration: none;
+            color: white;
+            background-color: blue ;
+            display: inline-block;
+            padding: 10px 15px;
+            text-align: center;
+        }
+            /*Hover para cuando el mouse está encima cambiar color*/
+        a:hover, a:active{
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Ejemplo de un enlace:</p>
+    <a href="https:www.w3schools.com">Pagina de curso HTML</a> <!--Atributo href para mandar al enlace deseado, se pueden agregar atributos para manipular distinto la redirección
+    Por ejemplo target, por defecto es _self, lo que abre la pagina en la ventana actual-->
+    <a href="https:www.w3schools.com" target="_blank">Pagina de curso HTML, hacia otra ventana nueva</a>
+    <a href="https:www.w3schools.com" target="_parent">Pagina de curso HTML, en el frame padre</a>
+    <a href="https:www.w3schools.com" target="_top">Pagina de curso HTML, en todo el cuerpo de la ventana</a>
+
+<!-- Existen links relativos y absolutos, los mostrados anteriormente son absolutos, los relativos son links dentro de la misma pagina web, que solo necesitan un /index.html, es decir,
+ el nombre de la pagina a mostrar dentro de la misma pagina-->
+    <a href="/Hyperlinks.html">Me mandaria a la pagina actual</a>
+
+    <a href="https://www.w3schools.com"><img src="" alt="Imagen con redirección a página web"></a>
+
+
+    <a href="mailto:ejemplo@ejemplo.com">Mandar un correo con la aplicación de correos del usuario.</a>
+
+    <button onclick="document.location='index.html'">Boton que redirige a un link</button>
+
+    <!--Bookmarks, marcadores, para navegar en paginas largas, por secciones
+    Los bookmarks se definen como id-->
+    <h1 id="seccion1">Seccion 1</h1>
+    <h2 id="seccion2">Seccion 2</h2>
+
+    <a href="#seccion1">Ir a seccion 1</a>
+    <a href="#seccion2">Ir a seccion 2</a>
+
+
+
+</body>
+</html>

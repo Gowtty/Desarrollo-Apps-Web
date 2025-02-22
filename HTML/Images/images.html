@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+    <!--Ya vimos las imagenes antes, en este caso podemos ver acciones nuevas con las imagenes, como los mapas de imagenes.
+    Consisten en redirigir a ciertos links del sitio web desde una imagen dependiendo de la region en la que se haga clic.-->
+
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="workplace" usemap="#workmap">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.w3schools.com/html/coffee.htm">
+        <!--Cada area puede tener formas distintas y sus coordenadas son a gusto del usuario. Podemos crear nuestras formas con shape poly-->
+    </map>
+</body>
+</html>
