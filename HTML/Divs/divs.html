@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs</title>
+    <style>
+        .container{
+            width: 100%;
+        }
+        
+        .container div{
+            width: 33%;
+            float: left; /*Propiedad para alinear horizontalmente*/
+            background-color: azure;
+        }
+
+        .container2 div{
+            width: 30%;
+            display: inline-block; /*Propiedad para alinear horizontalmente*/
+        }
+
+        .container3{
+            display: flex; /*Utilizando flex para alinear*/
+        }
+
+        .container3 div{
+            width: 33%;
+        }
+
+        .container4{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Los divs funcionan como contenedores-->
+    <div class="container" >
+        <div>
+            <h2>Mexico</h2>
+            <p>Mexico es un pais de America.</p>
+            <p>Tiene alrededor de 130 millones de habitantes.</p>
+         </div>
+    
+         <div>
+            <h2>Mexico</h2>
+            <p>Mexico es un pais de America.</p>
+            <p>Tiene alrededor de 130 millones de habitantes.</p>
+         </div>
+    
+         <div>
+            <h2>Mexico</h2>
+            <p>Mexico es un pais de America.</p>
+            <p>Tiene alrededor de 130 millones de habitantes.</p>
+         </div>
+    </div> 
+
+    <div class="container2" >
+        <div>
+            <h2>Mexico</h2>
+            <p>Mexico es un pais de America.</p>
+            <p>Tiene alrededor de 130 millones de habitantes.</p>
+         </div>
+    
+         <div>
+            <h2>Mexico</h2>
+            <p>Mexico es un pais de America.</p>
+            <p>Tiene alrededor de 130 millones de habitantes.</p>
+         </div>
+    
+         <div>
+            <h2>Mexico</h2>
+            <p>Mexico es un pais de America.</p>
+            <p>Tiene alrededor de 130 millones de habitantes.</p>
+         </div>
+    </div>
+
+    <div class="container3" >
+        <div>
+            <h2>Mexico</h2>
+            <p>Mexico es un pais de America.</p>
+            <p>Tiene alrededor de 130 millones de habitantes.</p>
+         </div>
+    
+         <div>
+            <h2>Mexico</h2>
+            <p>Mexico es un pais de America.</p>
+            <p>Tiene alrededor de 130 millones de habitantes.</p>
+         </div>
+    
+         <div>
+            <h2>Mexico</h2>
+            <p>Mexico es un pais de America.</p>
+            <p>Tiene alrededor de 130 millones de habitantes.</p>
+         </div>
+    </div> 
+
+    <!--Existe el Grid para hacer layouts, utiliza filas y columnas, es parecido al flex-->
+
+    <div class="container4" >
+        <div>
+            <h2>Mexico</h2>
+            <p>Mexico es un pais de America.</p>
+            <p>Tiene alrededor de 130 millones de habitantes.</p>
+         </div>
+    
+         <div>
+            <h2>Mexico</h2>
+            <p>Mexico es un pais de America.</p>
+            <p>Tiene alrededor de 130 millones de habitantes.</p>
+         </div>
+    
+         <div>
+            <h2>Mexico</h2>
+            <p>Mexico es un pais de America.</p>
+            <p>Tiene alrededor de 130 millones de habitantes.</p>
+         </div>
+    </div> 
+</body>
+</html>

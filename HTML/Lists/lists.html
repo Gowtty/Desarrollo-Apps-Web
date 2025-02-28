@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+
+    <style>
+        ul{ /*Se puede cambiar el simbolo de las listas desordenadas, por defecto es disc,
+            existe circle, square y none*/
+            list-style-type: circle;
+        }
+        /*Estilos menu horizontal*/
+        #horizontal{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        #horizontal li{
+            float: left;
+        }
+
+        #horizontal li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        #horizontal li a:hover{
+            background-color: #111111;
+        }
+    </style>
+</head>
+<body>
+    <!--Lista horizontal-->
+    <ul id="horizontal">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="about">About</a></li>
+    </ul>
+    <!--Unordered Lists, listas desordenadas-->
+    <ul>
+        <li>Juice</li>
+        <li>Tea</li>
+            <ul>
+                <li>Black Tea</li> <!--Nested lists, listas anidadas-->
+                <li>Green Tea</li>
+            </ul>
+        <li>Milk</li>
+        <li>Fruit</li>
+        <li>Vegetables</li>
+    </ul>
+
+    <!--Ordered Lists, listas ordenadas-->
+    <!--Se puede utilizar distintos tipos de enumeracion, 1, A, a, I e i-->
+    <ol type="1">
+        <li>Juice</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Fruit</li>
+        <li>Vegetables</li>
+    </ol>
+
+    <ol type="A">
+        <li>Juice</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Fruit</li>
+        <li>Vegetables</li>
+    </ol>
+
+    <ol type="a">
+        <li>Juice</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Fruit</li>
+        <li>Vegetables</li>
+    </ol>
+
+    <ol type="I">
+        <li>Juice</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Fruit</li>
+        <li>Vegetables</li>
+    </ol>
+
+    <ol type="i">
+        <li>Juice</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Fruit</li>
+        <li>Vegetables</li>
+    </ol>
+
+    <ol start="20"> <!--el atributo start define el comienzo de la lista-->
+        <li>Juice</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Fruit</li>
+        <li>Vegetables</li>
+    </ol>
+
+    <!-- Lista de descripcion, description list-->
+    <dl>
+        <dt>Juice</dt>
+        <dd>made of a fruit's pulp</dd>
+        <dt>Milk</dt>
+        <dd>100% cow milk</dd>
+    </dl>
+</body>
+</html>

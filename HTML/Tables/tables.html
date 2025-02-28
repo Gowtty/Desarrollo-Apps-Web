@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <style>
+        /*Agregar bordes a la tabla para que luzca mejor es necesario utilizar CSS*/
+        table, th, td{
+            border: 1px solid black;
+            /*Bordes redondeados
+            Existen estilos de linea de bordes: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden;*/
+            border-radius: 10px;
+            /*Tambien se puede modificar el color del border*/
+            border-color: red;
+        }
+
+        /*Se puede cambiar el tamaño de los elementos de la tabla, columnas, filas, etc.*/
+        table{
+            width: 100%;
+            /*Tambien se puede manejar el espaciado entre los bordes internos de la tabla con border-spacing*/
+            border-spacing: 30px;
+        }
+
+
+
+        th{
+            width: 50%;
+            text-align: left; /*Se puede mover la alineacion del texto como en cualquier elemento de texto*/
+        }
+
+        tr{
+            height: 50px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover{
+            background-color: lightgray;
+        }
+
+        tr:nth-child(even){/*Efecto horizontal, ambos efectos se pueden combinar*/ 
+            background-color: lightblue; 
+        }
+
+        /*Efecto vertical*/
+        td:nth-child(even), th:nth-child(odd){ /*Odd se refiere a numeros impares*/
+            background-color: lightgoldenrodyellow;
+        }
+
+        th, td{
+            padding: 20px; /*Se puede agregar espaciado entre las celdas, sus bordes y su contenido.*/
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Contacts table</caption> <!--Se puede dar un titulo a la tabla-->
+        <colgroup> <!--Colgroup es para agrupar columnas, se pueden utilizar multiples grupos-->
+            <col span="2" style="background-color: lightsalmon;">
+            <col span="3" style="background-color: lightgray;">
+        </colgroup>
+        <tr> <!--tr es para las table rows, las filas de la tabla-->
+            <th colspan="2">Name</th> <!--th se refiere a table header, son las celdas del encabezado, la informacion a mostrar, las columnas
+            colspan se refiere a el numero de td que abarca el th, tambien existe rowspan para manejar multiples filas-->
+            <th>Address</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Joseph</td>
+            <td>Lopez</td>   <!--td se refiere a las celdas de la tabla, el contenido de cada celda de la tabla-->
+            <td>Real Street 123</td>
+            <td>Joseph@gmail.com</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Raul</td>
+            <td>Perez</td>
+            <td>Fake Street 123</td>
+            <td>raulp@gmail.com</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Joseph</td>
+            <td>Lopez</td>  <!--td se refiere a las celdas de la tabla, el contenido de cada celda de la tabla-->
+            <td>Real Street 123</td>
+            <td>Joseph@gmail.com</td>
+            <td>25</td>
+        </tr>
+    </table>
+</body>
+</html>
